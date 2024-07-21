@@ -4,7 +4,7 @@
 
 # Ada Planet 3.0
 ### News from the Ada programming language world
-This is the third incarnation Ada Planet a site collecting RSS and Atom feeds for news about the Ada programming language.
+This is the third incarnation of Ada Planet, a site collecting RSS and Atom feeds for news about the Ada programming language.
 The previous version by Thindil, which was the second incarnation, is archived in his [repository](https://github.com/thindil/adaplanet).
 
 The current version is simply powered by Blogger. This repository is just a backup of the site theme, containing both the structure and the feeds of the site.
