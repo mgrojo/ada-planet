@@ -2155,7 +2155,7 @@ head.appendChild(script);
             </b:widget>
             <b:widget id='Feed1' locked='false' title='comp.lang.ada' type='Feed'>
               <b:widget-settings>
-                <b:widget-setting name='feedUrl'>https://archive.legitdata.co/comp.lang.ada/new.atom</b:widget-setting>
+                <b:widget-setting name='feedUrl'>https://usenet.ada-lang.io/comp.lang.ada/new.atom</b:widget-setting>
                 <b:widget-setting name='openLinksInNewWindow'>true</b:widget-setting>
                 <b:widget-setting name='numItemsShow'>5</b:widget-setting>
                 <b:widget-setting name='showItemDate'>false</b:widget-setting>
@@ -2192,6 +2192,24 @@ head.appendChild(script);
             <b:widget id='Feed3' locked='false' title='Newest questions tagged ada - Stack Overflow' type='Feed'>
               <b:widget-settings>
                 <b:widget-setting name='feedUrl'><![CDATA[https://stackoverflow.com/feeds/tag?tagnames=ada&sort=newest]]></b:widget-setting>
+                <b:widget-setting name='openLinksInNewWindow'>true</b:widget-setting>
+                <b:widget-setting name='numItemsShow'>5</b:widget-setting>
+                <b:widget-setting name='showItemDate'>true</b:widget-setting>
+                <b:widget-setting name='showItemAuthor'>true</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+    <h2><data:title/></h2>
+    <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
+      <span style='filter: alpha(25); opacity: 0.25;'>
+        <a expr:href='data:feedUrl'><data:loadingMsg/></a>
+      </span>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+            </b:widget>
+            <b:widget id='Feed22' locked='false' title='Hackaday  –  ada tag' type='Feed'>
+              <b:widget-settings>
+                <b:widget-setting name='feedUrl'>https://hackaday.com/tag/ada/feed/</b:widget-setting>
                 <b:widget-setting name='openLinksInNewWindow'>true</b:widget-setting>
                 <b:widget-setting name='numItemsShow'>5</b:widget-setting>
                 <b:widget-setting name='showItemDate'>true</b:widget-setting>
@@ -2526,6 +2544,24 @@ head.appendChild(script);
     <b:include name='quickedit'/>
   </b:includable>
   </b:widget>
+  <b:widget id='Feed21' locked='false' title='AdaCore YouTube channel' type='Feed'>
+    <b:widget-settings>
+      <b:widget-setting name='feedUrl'>https://www.youtube.com/feeds/videos.xml?channel_id=UCOC7qHXMYZe-w1737_Vv7Yg</b:widget-setting>
+      <b:widget-setting name='openLinksInNewWindow'>true</b:widget-setting>
+      <b:widget-setting name='numItemsShow'>5</b:widget-setting>
+      <b:widget-setting name='showItemDate'>true</b:widget-setting>
+      <b:widget-setting name='showItemAuthor'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <h2><data:title/></h2>
+    <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
+      <span style='filter: alpha(25); opacity: 0.25;'>
+        <a expr:href='data:feedUrl'><data:loadingMsg/></a>
+      </span>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
   <b:widget id='Feed4' locked='false' title='Ada Resource Association' type='Feed'>
     <b:widget-settings>
       <b:widget-setting name='feedUrl'>https://www.adaic.org/feed/</b:widget-setting>
@@ -2533,6 +2569,58 @@ head.appendChild(script);
       <b:widget-setting name='numItemsShow'>5</b:widget-setting>
       <b:widget-setting name='showItemDate'>true</b:widget-setting>
       <b:widget-setting name='showItemAuthor'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <h2><data:title/></h2>
+    <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
+      <span style='filter: alpha(25); opacity: 0.25;'>
+        <a expr:href='data:feedUrl'><data:loadingMsg/></a>
+      </span>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='HTML5' locked='false' title='' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<h1 style="color: #3771c8">Community Blogs</h1>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='Feed23' locked='false' title='Ada Programming Language Tips' type='Feed'>
+    <b:widget-settings>
+      <b:widget-setting name='feedUrl'>https://ada.tips/feeds/all.rss.xml</b:widget-setting>
+      <b:widget-setting name='openLinksInNewWindow'>true</b:widget-setting>
+      <b:widget-setting name='numItemsShow'>5</b:widget-setting>
+      <b:widget-setting name='showItemDate'>true</b:widget-setting>
+      <b:widget-setting name='showItemAuthor'>true</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <h2><data:title/></h2>
+    <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
+      <span style='filter: alpha(25); opacity: 0.25;'>
+        <a expr:href='data:feedUrl'><data:loadingMsg/></a>
+      </span>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='Feed24' locked='false' title='Ada programming' type='Feed'>
+    <b:widget-settings>
+      <b:widget-setting name='feedUrl'>https://ada-programming.blogspot.com/feeds/posts/default</b:widget-setting>
+      <b:widget-setting name='openLinksInNewWindow'>true</b:widget-setting>
+      <b:widget-setting name='numItemsShow'>5</b:widget-setting>
+      <b:widget-setting name='showItemDate'>true</b:widget-setting>
+      <b:widget-setting name='showItemAuthor'>true</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
     <h2><data:title/></h2>
@@ -2584,6 +2672,42 @@ head.appendChild(script);
       <b:widget-setting name='openLinksInNewWindow'>true</b:widget-setting>
       <b:widget-setting name='numItemsShow'>5</b:widget-setting>
       <b:widget-setting name='showItemDate'>false</b:widget-setting>
+      <b:widget-setting name='showItemAuthor'>true</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <h2><data:title/></h2>
+    <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
+      <span style='filter: alpha(25); opacity: 0.25;'>
+        <a expr:href='data:feedUrl'><data:loadingMsg/></a>
+      </span>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='Feed19' locked='false' title='Emacs Ada mode - News' type='Feed'>
+    <b:widget-settings>
+      <b:widget-setting name='feedUrl'>https://savannah.nongnu.org/news/atom.php?group=ada-mode</b:widget-setting>
+      <b:widget-setting name='openLinksInNewWindow'>true</b:widget-setting>
+      <b:widget-setting name='numItemsShow'>5</b:widget-setting>
+      <b:widget-setting name='showItemDate'>false</b:widget-setting>
+      <b:widget-setting name='showItemAuthor'>true</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <h2><data:title/></h2>
+    <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
+      <span style='filter: alpha(25); opacity: 0.25;'>
+        <a expr:href='data:feedUrl'><data:loadingMsg/></a>
+      </span>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='Feed20' locked='false' title='Recent discussions in alire-project/alire' type='Feed'>
+    <b:widget-settings>
+      <b:widget-setting name='feedUrl'>https://github.com/alire-project/alire/discussions.atom</b:widget-setting>
+      <b:widget-setting name='openLinksInNewWindow'>true</b:widget-setting>
+      <b:widget-setting name='numItemsShow'>5</b:widget-setting>
+      <b:widget-setting name='showItemDate'>true</b:widget-setting>
       <b:widget-setting name='showItemAuthor'>true</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
